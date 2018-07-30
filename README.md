@@ -168,11 +168,11 @@ git pull origin master --allow-unrelated-histories
 
 
 错误提示： 执行 git reset HEAD
-Unstaged changes after reset 
+Unstaged changes after reset 
 解决的办法如下2中办法：
 git add .
 git reset --hard
-2. 
+2. 
 git stash
 git stash drop
 出现这种现象的原因好像是因为在新分支上，repos没有感知不到这个阶段的改变，你要用 add 或 stash, 让其知晓，才能做想要的回滚。
@@ -181,7 +181,6 @@ git stash drop
 错误：
 fatal: remote origin already exists.
  git remote rm origin 
-
 
 
 
